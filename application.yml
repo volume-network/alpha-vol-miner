@@ -1,0 +1,6 @@
+url: 'http://39.107.252.61:9125'
+target_deadline: '60000'
+account_ids:
+  - '14277462372480454007'
+plot_dirs:
+  - '/home/huzy/plot'
