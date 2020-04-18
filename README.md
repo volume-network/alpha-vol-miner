@@ -32,15 +32,6 @@ plot_dirs:
   - 'D:\plotdata3'
   - 'D:\plotdata4'
 ```
-在Windows上面启动挖矿软件:
-```
-java -jar miner-0.1.5.jar
-```
-
-在Linux上面启动挖矿软件:
-```
-nohup java -jar miner-0.1.5.jar&
-```
 
 ### 老的机器CPU不支持avx2指令集怎么办
 添加cpu字段，支持老的avx指令
@@ -87,4 +78,14 @@ plot_dirs:
 additional_headers:
   pk: b44e1652848f921d504177baeca93a811c9f0fa73399a25c0adbd5188f80ba2b
   chaintype: BHD
+```
+
+在Windows上面启动挖矿软件:
+```
+java -jar miner-0.1.5.jar
+```
+
+在Linux上面启动挖矿软件:
+```
+nohup java -jar miner-0.1.5.jar&
 ```
