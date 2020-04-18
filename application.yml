@@ -1,6 +1,19 @@
-url: 'http://39.107.252.61:9125'
+url: 'http://39.107.252.61:9125,http://39.107.252.61:9125'
 target_deadline: '60000'
 account_ids:
+  - '698270381115387253'
   - '14277462372480454007'
 plot_dirs:
   - '/home/huzy/plot'
+
+
+# BHD 双挖配置, 不需要双挖的，删除这个部分
+additional_headers:
+  pk: b44e1652848f921d504177baeca93a811c9f0fa73399a25c0adbd5188f80ba2b
+  chaintype: BHD
+
+# 如果不填写CPU， 默认就是avx2.
+# 使用cpuz查看cpu支持的指令集，填写avx或者avx2.
+# 老机器不支持avx2，新机器支持avx2。avx2性能比avx更好一些.
+cpu: avx
+
