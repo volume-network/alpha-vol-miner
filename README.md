@@ -34,7 +34,9 @@ plot_dirs:
 ```
 
 ### 老的机器CPU不支持avx2指令集怎么办
-添加cpu字段，支持老的avx指令
+使用cpuz来查看cpu支持的指令集。如果不支持avx2，仅仅支持avx，那么添加cpu字段，就可以支持老的avx指令了。
+cpuz下载地址：
+https://pc.qq.com/detail/19/detail_1019.html
 ```
 url: 'http://39.107.252.61:9125'
 target_deadline: '60000'
