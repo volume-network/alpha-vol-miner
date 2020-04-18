@@ -42,3 +42,49 @@ java -jar miner-0.1.5.jar
 nohup java -jar miner-0.1.5.jar&
 ```
 
+### 老的机器CPU不支持avx2指令集怎么办
+添加cpu字段，支持老的avx指令
+```
+url: 'http://39.107.252.61:9125'
+target_deadline: '60000'
+account_ids:
+  - '698270381115387253'
+  - '14277462372480454007'
+plot_dirs:
+  - '/home/huzy/plot'
+
+# 如果不填写CPU， 默认就是avx2.
+# 使用cpuz查看cpu支持的指令集，填写avx或者avx2.
+# 老机器不支持avx2，新机器支持avx2。avx2性能比avx更好一些.
+cpu: avx
+```
+
+### 多个矿工，每个矿工的矿池地址不相同怎么办
+用逗号隔开url里面的矿池地址，隔开后url的数量，必须和account_ids的数量一样
+```
+url: 'http://39.107.252.61:9125,http://39.107.252.61:9125'
+target_deadline: '60000'
+account_ids:
+  - '698270381115387253'
+  - '14277462372480454007'
+plot_dirs:
+  - '/home/huzy/plot'
+```
+
+### BHD双挖怎么配置
+添加additional_headers字段
+```
+url: 'http://39.107.252.61:9125,http://39.107.252.61:9125'
+target_deadline: '60000'
+account_ids:
+  - '698270381115387253'
+  - '14277462372480454007'
+plot_dirs:
+  - '/home/huzy/plot'
+
+
+# BHD 双挖配置, 不需要双挖的，删除这个部分
+additional_headers:
+  pk: b44e1652848f921d504177baeca93a811c9f0fa73399a25c0adbd5188f80ba2b
+  chaintype: BHD
+```
