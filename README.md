@@ -78,7 +78,7 @@ plot_dirs:
 
 # BHD 双挖配置, 不需要双挖的，删除这个部分
 additional_headers:
-  pk: b44e1652848f921d504177baeca93a811c9f0fa73399a25c0adbd5188f80ba2b
+  pk: 177baeca93a811c9f0fa73399a25c0adb.........
   chaintype: BHD
 ```
 
