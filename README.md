@@ -67,11 +67,10 @@ plot_dirs:
 ### BHD双挖怎么配置(这个配置与多矿工挖矿不兼容)
 添加additional_headers字段
 ```
-url: 'http://39.107.252.61:9125,http://39.107.252.61:9125'
+url: 'http://39.107.252.61:9125'
 target_deadline: '60000'
 account_ids:
   - '698270381115387253'
-  - '14277462372480454007'
 plot_dirs:
   - '/home/huzy/plot'
 
