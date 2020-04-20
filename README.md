@@ -81,6 +81,8 @@ additional_headers:
   chaintype: BHD
 ```
 
+
+## 启动
 在Windows上面启动挖矿软件:
 ```
 java -jar miner-0.1.5.jar
