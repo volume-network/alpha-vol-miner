@@ -84,6 +84,7 @@ additional_headers:
 
 ## 启动
 在Windows上面启动挖矿软件:
+用Windows资源管理器打开 miner-0.1.5.jar 所在文件夹，在文件夹路径中输入cmd，然后输入以下内容，回车。
 ```
 java -jar miner-0.1.5.jar
 ```
