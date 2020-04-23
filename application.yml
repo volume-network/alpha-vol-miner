@@ -13,7 +13,8 @@ additional_headers:
   chaintype: BHD
 
 # 如果不填写CPU， 默认就是avx2.
-# 使用cpuz查看cpu支持的指令集，填写avx或者avx2.
-# 老机器不支持avx2，新机器支持avx2。avx2性能比avx更好一些.
+# 使用cpuz查看cpu支持的指令集，填写sse,avx或者avx2.
+# 性能 sse < avx < avx2
+# 但是不同机器支持的指令集不相同，需要自己去看自己的cpu支持哪种指令集
 cpu: avx
 
